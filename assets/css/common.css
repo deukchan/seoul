@@ -1,0 +1,105 @@
+/* 공통 소스 */
+
+
+#skip-nav {
+    position: relative;
+    z-index: 3000
+}
+
+#skip-nav a {
+    position: absolute;
+    top: -30px;
+    left: 0;
+    width: 138px;
+    border: 1px solid #4ec53d;
+    background: #333;
+    text-align: center;
+    color: #fff;
+}
+
+#skip-nav a:active,#skip-nav a:focus {
+    top: 0;
+    text-decoration: none;
+    z-index: 1000
+}
+
+/* 상단으로 가는 버튼 */
+
+#topBtn{
+    position: fixed;
+    bottom: -100px;
+    left: 50%;
+    display: block;
+    width: 34px;
+    height: 34px;
+    margin-left: 600px;
+    z-index: 10;
+    opacity: 0;
+    transition: 1s;
+    background: url(../images/arrow-top.png) no-repeat;
+}
+
+#topBtn.show {
+    opacity: 1;
+    bottom: 98px;
+}
+
+
+
+/* 숨김 텍스트 */
+.blind {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    clip: rect(0, 0, 0, 0);
+    overflow: hidden;
+}
+
+/* 중앙 정렬 */
+.inner{
+    width: 1152px;
+    margin:0 auto;
+}
+
+/* 이미지 스프라이트 이미지 1번 */
+.swiper-button-prev:after,
+.sc-slide .group-slide .slide-btn .btn-area .btn.prev::before,
+.header .header-top .logo-area a::before {
+    background-image: url(../images/is-01.png);
+    background-repeat: no-repeat;
+    background-size: 300px 300px;
+}
+
+/* 이미지 스프라이트 이미지 2번 */
+
+.sc-slide .slide-title .title-btn .main-icon::before {
+    background-image: url(../images/is-02.png);
+    background-repeat: no-repeat;
+    background-size: 300px 300px;
+}
+
+.sc-board .event-item .culture{
+    /* color: #9b64d3; */
+    color: var(--c-purple);
+}
+.sc-board .event-item .welfare{
+    /* color: #d76000; */
+    color: var(--c-orange);
+}
+.sc-board .event-item .environ{
+    /* color: #599100; */
+    color: var(--c-green);
+}
+.sc-board .event-item .public{
+    /* color: #028ab6; */
+    color: var(--c-blue);
+}
+
+
+.sc-news .news-list .news-item .img-box .badge.culture{background-color: #9b64d3;}
+.sc-news .news-list .news-item .img-box .badge.house{background-color: #c35c3c;}
+.sc-news .news-list .news-item .img-box .badge.welfare{background-color: #d76000;}
+.sc-news .news-list .news-item .img-box .badge.environ{background-color: #599100;}
+.sc-news .news-list .news-item .img-box .badge.public{background-color: #028ab6;}
+

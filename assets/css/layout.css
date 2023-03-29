@@ -1,0 +1,408 @@
+/* 폰트 가져오는 url */
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap');
+
+@import './reset.css';
+@import './common.css';
+
+
+/* header */
+
+.header {
+    background: #fff;
+    height: auto;
+    width: 1152px;
+    margin: 0 auto;
+}
+.header .header-top{
+    position: relative;
+    width: 1152px;
+    margin: 0 auto;
+    min-width: 1152px;
+}
+
+.header .header-top .inner {
+    display: flex;
+}
+
+.header .header-top .logo-area{
+    width: 105px;
+    height: 27px;
+    padding: 0;
+    margin-top: 8px;
+}
+.header .header-top .logo-area a::before {
+    content: '';
+    display: block;
+    width: 105px;
+    height: 27px;
+    background-position: -8px -165px;
+}
+
+.header .header-top .gnb{
+    width: calc(100% - 101px);
+}
+.header .header-top .gnb .menu-list{
+    display: flex;
+}
+.header .header-top .gnb .menu-item{
+    margin-left: 20px;
+}
+.header .header-top .gnb .menu-item a{
+    display: block;
+    font-size: 16px;
+    height: 48px;
+    line-height: 48px;
+    font-weight: 700;
+}
+.header .header-top .gnb .menu-item:first-child{
+    padding-left: 40px;
+    margin-left: 30px;
+    position: relative;
+}
+
+.header .header-top .login-area{
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: flex;
+    height: 48px;
+    line-height: 48px;
+}
+.header .header-top .login-area .login{
+    padding: 0 10px;
+    margin: 0;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.header .header-bottom {
+    display: block;
+    position: relative;
+    background: #fff;
+    height: 120px;
+    padding: 0;
+}
+
+.header .header-bottom{
+    position: relative;
+    width: 1152px;
+    margin: 0 auto;
+    min-width: 1152px;
+    display: flex;
+}
+.header .header-bottom .slogun-area{
+    margin: 38px 0 30px;
+    background: url(../images/header/hd-img-01.png) no-repeat 0 0;
+    width: 133px;
+    height: 51px;
+}
+.header .header-bottom .logo-area .logo{}
+.header .header-bottom .logo-area .logo a{}
+
+.header .header-bottom .search-area{
+    width: 520px;
+    height: 43px;
+    border: 3px solid #2292e9;
+    position: absolute;
+    left: 50%;
+    top: 40px;
+    margin-left: -326px;
+    margin-top: 0;
+    box-sizing: border-box;
+}
+.header .header-bottom .search-area form{
+    width: calc(100% - 42px);
+    display: flex;
+}
+.header .search-area .input-text{
+    width: 100%;
+    border: 0;
+    padding: 0 10px;
+    height: 38px;
+    line-height: 38px;
+    box-sizing: border-box;
+    font-size: 14px;
+    background: transparent;
+    outline: none;
+}
+.header .search-area .input-text::placeholder{
+    color: #2292e9;
+}
+.header .search-area .input-text:focus::placeholder{
+    color: transparent;
+}
+
+.header .header-bottom .search-area img{
+    margin-left: 3px;
+    vertical-align: middle;
+    cursor: pointer;
+    position: absolute;
+    top: 12px;
+    right: 42px;
+}
+.header .header-bottom .search-area .btn-keyboard{
+    margin-left: 3px;
+    vertical-align: middle;
+    cursor: pointer;
+    position: absolute;
+    width: 29px;
+    height: 16px;
+    top: 12px;
+    right: 42px;
+    background: url(../images/header/hd-img-02.png) no-repeat;
+}
+
+.header .header-bottom .search-area .btn-submit{
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    padding: 0;
+    background: url(../images/is-01.png) no-repeat -32px -97px;
+}
+/* 날씨영역 */
+.header .header-bottom .weather-area{
+    position: absolute;
+    top: 34px;
+    right: 0;
+    width: 270px;
+    height: 85px;
+    vertical-align: top;
+    display: flex;
+}
+.header .header-bottom .weather-area .icon-area{
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 4px;
+    margin-left: 3px;
+}
+
+.header .header-bottom .weather-area .txt-area{
+    max-width: 242px;
+    display: inline-block;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.header .header-bottom .weather-area .txt-area .txt-top{}
+.header .header-bottom .weather-area .txt-area .txt-top a{}
+.header .header-bottom .weather-area .txt-area .temp-wrap strong{
+    font-size: 25px;
+    margin-right: 5px;
+    font-weight: bold;
+}
+.header .header-bottom .weather-area .txt-area .temp-wrap span{
+    font-size: 16px;
+    letter-spacing: -0.1em;
+    margin-left: 5px;
+}
+
+.header .header-bottom .weather-area .txt-area .dust-wrap{
+    margin-top: 7px;
+}
+.header .header-bottom .weather-area .txt-area .dust-wrap span{
+    font-size: 13px;
+    letter-spacing: -1px;
+}
+.header .header-bottom .weather-area .txt-area .dust-wrap .average{
+    color: #009944;
+    margin-right: 1px;
+}
+.header .header-bottom .weather-area .txt-area .dust-wrap .good{
+    color: #0068b7;
+}
+
+
+.header .header-bottom .lang-area{
+    position: absolute;
+    width: 110px;
+    height: 21px;
+    right: 0;
+    top: 0;
+    display: flex;
+}
+
+.header .header-bottom .lang-area label{}
+
+.header .header-bottom .lang-area select{
+    width: 80px;
+    height: 21px;
+    border-color: #afcfea;
+    color: #1E6CB3;
+    font-size: 12px;
+    padding: 0 0 0 2px;
+    box-sizing: border-box;
+    line-height: 21px;
+    appearance: none;
+    border-radius: 0;
+    background: url(../images/arrow-02.png) no-repeat no-repeat 96% center;
+    background-size: 8px auto;
+}
+.header .header-bottom .lang-area select option{
+    font-weight: normal;
+    display: block;
+    white-space: nowrap;
+    min-height: 1.2em;
+    padding: 0px 2px 1px;
+}
+
+.header .header-bottom .lang-area .btn-go{
+    width: 30px;
+    font-size: 11px;
+    color: #fff;
+    background-color: #1E6CB3;
+    border: 0;
+    height: 21px;
+    display: inline-block;
+    padding: 0;
+}
+
+
+/* footer */
+
+.footer {
+    
+}
+.footer .group-link{
+    position: relative;
+}
+.footer .link-area ul {
+    display: flex;
+    padding: 15px 0;
+    position: relative;
+}
+.footer .link-area ul li{
+    position: relative;
+    padding: 0 10px;
+}
+.footer .link-area ul li:first-child {
+    padding-left: 0;
+}
+.footer .link-area ul li+li::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    display: block;
+    width: 1px;
+    height: 14px;
+    margin-top: -6px;
+    background: #dcdcdc;
+}
+.footer .link-area ul li a{
+    font-size: 12px;
+    color: #636363;
+}
+.footer .link-area ul .policy {
+    font-weight: 700;
+    color: #000;
+    font-size: 12px;
+}
+
+.footer .sns-area {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    margin-top: -14px;
+    overflow: hidden;
+    font-size: 0;
+    text-align: center;
+}
+.footer .sns-area .sns-list{
+    display: flex;
+}
+.footer .sns-area .sns-item{
+    width: 24px;
+    height: 24px;
+    background: url(../images/is-05.png) no-repeat 0 0;
+}
+.footer .sns-area .sns-item+.sns-item{
+    margin-left: 12px;
+}
+.footer .sns-area .sns-item.facebook {
+    background-position: -25px 0;
+}
+.footer .sns-area .sns-item.twiter{
+    background-position: -50px 0;
+}
+.footer .sns-area .sns-item.insta{
+    background-position: -75px 0;
+}
+.footer .sns-area .sns-item.kakao{
+    background-position: -100px 0;
+}
+.footer .sns-area .sns-item.youtube{
+    background-position: -125px 0;
+}
+.footer .sns-area .sns-item.blog{
+    background-position: -150px 0;
+}
+
+.footer .sns-area .sns-item a{
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    font-size: 0;
+    text-indent: -9999em;
+}
+
+
+
+.footer .group-info{
+    padding: 22px 0;
+    border-top: 1px solid #ccc;
+    display: flex;
+    position: relative;
+}
+.footer .group-info .qna-area {
+    margin-right: 40px;
+    width: 108px;
+    height: 45px;
+    background: url(../images/is-01.png) no-repeat -180px 0;
+}
+.footer .group-info .address-area {
+    display: inline-block;
+    vertical-align: top;
+}
+.footer .group-info .address-area .addr {
+    font-weight: 500;
+}
+.footer .group-info .address-area p {
+    color: #636363;
+    font-size: 12px;
+    padding-bottom: 2px;
+    margin-bottom: 0;
+    line-height: 1.35em;
+}
+.footer .group-info .address-area p a {
+    font-size: 11px;
+    font-weight: 400;
+}
+.footer .group-info .address-area .copy {
+    display: block;
+    font-size: 11px;
+    margin: 0;
+}
+
+
+.footer .group-info .mark-area {
+    position: absolute;
+    top: 20px;
+    right: 0;
+    padding: 0;
+    background: none;
+}
+.footer .group-info .mark-area a{
+    display: inline-block;
+}
+.footer .group-info .mark-area a+a{
+    margin-left: 10px;
+}
+.footer .group-info .mark-area img{
+    vertical-align: top;
+}
+
+
+
