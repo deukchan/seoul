@@ -311,12 +311,12 @@
 }
 
 .sc-mayor {}
-.sc-mayor .sub-area{
+.sc-mayor .mayor-area{
     height: 90px;
     position: relative;
     margin-top: 7px;
 }
-.sc-mayor .sub-area .link-mani{
+.sc-mayor .mayor-area .link-mani{
     position: absolute;
     bottom: 15px;
     left: 243px;
