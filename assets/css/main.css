@@ -355,12 +355,12 @@
 
 
 .sc-main-service{}
-.sc-main-service .sub-area{
+.sc-main-service .link-area{
     position: absolute;
     top: 55px;
     right: 0;
 }
-.sc-main-service .sub-area a{
+.sc-main-service .link-area a{
     display: inline-flex;
     align-items: center;
     position: relative;
@@ -368,12 +368,12 @@
     background: url(../images/main-service/m-sv-img-01.png) no-repeat 0 0;
 }
 
-.sc-main-service .sub-area a.link-stroy{
+.sc-main-service .link-area a.link-stroy{
     width: 65px;
     margin-right: 14px;
     background-position: 0 0;
 }
-.sc-main-service .sub-area a.link-stroy::after {
+.sc-main-service .link-area a.link-stroy::after {
     content: '';
     position: absolute;
     top: 9px;
@@ -383,7 +383,7 @@
     background: #dbdbdb;
 }
 
-.sc-main-service .sub-area a.link-festive {
+.sc-main-service .link-area a.link-festive {
     width: 95px;
     margin-left: 14px;
     background-position: -65px 0;
